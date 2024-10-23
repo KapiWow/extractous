@@ -511,6 +511,8 @@
   }, {
     "pattern":"\\Qquarkus.txt\\E"
   }, {
+    "pattern":"\\Qtable-multi-row-column-cells.png\\E"
+  }, {
     "pattern":"\\QtestEXCEL_embeded.xls\\E"
   }, {
     "pattern":"\\Qword.docx\\E"
@@ -524,6 +526,8 @@
     "pattern":"java.base:\\Qjdk/internal/icu/impl/data/icudt74b/nfkc.nrm\\E"
   }, {
     "pattern":"java.base:\\Qjdk/internal/icu/impl/data/icudt74b/ubidi.icu\\E"
+  }, {
+    "pattern":"java.base:\\Qjdk/internal/icu/impl/data/icudt74b/uprops.icu\\E"
   }, {
     "pattern":"java.base:\\Qsun/net/idn/uidna.spp\\E"
   }, {

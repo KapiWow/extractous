@@ -66,7 +66,7 @@
   "queryAllDeclaredMethods":true,
   "queryAllPublicMethods":true,
   "queryAllDeclaredConstructors":true,
-  "methods":[{"name":"<init>","parameterTypes":[] }, {"name":"testAppleFilingPdf","parameterTypes":[] }, {"name":"testGetPlainTextFromInvoice","parameterTypes":[] }, {"name":"testGetTextFromPdfFormatWithFonts","parameterTypes":[] }, {"name":"testGetTextFromXlsFile","parameterTypes":[] }, {"name":"testHandbook1pDocxFile","parameterTypes":[] }, {"name":"testNoNewRomanPdfFile","parameterTypes":[] }, {"name":"testWordDocxFile","parameterTypes":[] }, {"name":"test_invalidPath","parameterTypes":[] }, {"name":"test_quarkusOdtFile","parameterTypes":[] }, {"name":"test_quarkusPdfFile","parameterTypes":[] }, {"name":"test_quarkusTxtFile","parameterTypes":[] }]
+  "methods":[{"name":"<init>","parameterTypes":[] }, {"name":"testAppleFilingPdf","parameterTypes":[] }, {"name":"testGetPlainTextFromInvoice","parameterTypes":[] }, {"name":"testGetTextFromPdfFormatWithFonts","parameterTypes":[] }, {"name":"testGetTextFromXlsFile","parameterTypes":[] }, {"name":"testHandbook1pDocxFile","parameterTypes":[] }, {"name":"testImageFile","parameterTypes":[] }, {"name":"testNoNewRomanPdfFile","parameterTypes":[] }, {"name":"testWordDocxFile","parameterTypes":[] }, {"name":"test_invalidPath","parameterTypes":[] }, {"name":"test_quarkusOdtFile","parameterTypes":[] }, {"name":"test_quarkusPdfFile","parameterTypes":[] }, {"name":"test_quarkusTxtFile","parameterTypes":[] }]
 },
 {
   "name":"ai.yobix.TikaParseTest",
@@ -168,6 +168,10 @@
   "methods":[{"name":"<init>","parameterTypes":[] }]
 },
 {
+  "name":"com.sun.crypto.provider.HmacCore$HmacSHA256",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
   "name":"com.sun.crypto.provider.HmacCore$HmacSHA384",
   "methods":[{"name":"<init>","parameterTypes":[] }]
 },
@@ -177,6 +181,10 @@
 },
 {
   "name":"java.lang.Enum"
+},
+{
+  "name":"java.lang.NullPointerException",
+  "queryAllDeclaredMethods":true
 },
 {
   "name":"java.lang.String"
@@ -769,6 +777,15 @@
 },
 {
   "name":"org.brotli.dec.BrotliInputStream"
+},
+{
+  "name":"org.opentest4j.AssertionFailedError",
+  "queryAllDeclaredMethods":true,
+  "methods":[{"name":"getActual","parameterTypes":[] }, {"name":"getExpected","parameterTypes":[] }]
+},
+{
+  "name":"org.opentest4j.ValueWrapper",
+  "methods":[{"name":"getValue","parameterTypes":[] }]
 },
 {
   "name":"org.openxmlformats.schemas.drawingml.x2006.main.CTNonVisualDrawingProps"
@@ -1502,6 +1519,10 @@
 {
   "name":"sun.security.pkcs12.PKCS12KeyStore$DualFormatPKCS12",
   "methods":[{"name":"<init>","parameterTypes":[] }]
+},
+{
+  "name":"sun.security.provider.DRBG",
+  "methods":[{"name":"<init>","parameterTypes":["java.security.SecureRandomParameters"] }]
 },
 {
   "name":"sun.security.provider.DSA$SHA224withDSA",

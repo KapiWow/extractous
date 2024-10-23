@@ -59,7 +59,12 @@ fn main() {
     println!("cargo:rustc-link-search={}", libs_out_dir.display());
 
     // Tell cargo to tell rustc to link the `tika_native` shared library.
-    println!("cargo:rustc-link-lib=dylib=tika_native");
+    let lib_tika_name = if cfg!(target_os = "windows") {
+        "libtika_native"
+    } else {
+        "tika_native"
+    };
+    println!("cargo:rustc-link-lib=dylib={}", lib_tika_name);
 }
 
 // Run the gradle build command to build tika-native
@@ -80,6 +85,7 @@ fn gradle_build(
 
     Command::new(gradlew)
         .current_dir(tika_native_dir)
+        .arg("--no-daemon")
         .arg("nativeCompile")
         .env("JAVA_HOME", graalvm_home)
         .status()
